@@ -14,7 +14,16 @@ gap: 10px;
 }
 
 #toDo {
-    width: 35vw;
+    width: 30vw;
+    height: 35vh;
+    background-color: cornsilk;
+    text-align: center;
+    border-radius: 10%;
+    
+}
+
+#doing {
+    width: 30vw;
     height: 35vh;
     background-color: cornsilk;
     text-align: center;
@@ -23,9 +32,15 @@ gap: 10px;
 }
 
 #done{
-    width: 35vw;
+    width: 30vw;
     height: 35vh;
     background-color: cornsilk;
     text-align: center;
     border-radius: 10%;
+}
+
+.card{
+    width: 10vw;
+    height: 15vh;
+    background-color: blueviolet;
 }

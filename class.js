@@ -1,15 +1,28 @@
-class TaskCard { 
+// export default class é para mim conseguir importar essa classe e conseguir chamar o metodo no arquivo dos controllers
+
+export default class TaskCard { 
     constructor(tittle, description, responsable, cardComplete){ 
         this.tittle = tittle 
         this.description = description 
         this.responsable = responsable
-        this.cardComplete = false } 
+        this.cardComplete = cardComplete } 
     
-    changeStatus(){
-        return this.cardComplete = !this.cardComplete
-    }
+    createCard(createButton){
+        const collum = document.querySelector('.collums')
+        const card = document.createElement('div')
+        const input = document.createElement('input')
+        const criar = document.createElement('button')
+        
+        input.type = "text"
+        input.placeholder = "Digite sua tarefa..."
+
+        input.classList.add("card")
+
+        collum.appendChild(card)
     }
 
-const t1 = new TaskCard("Titulo", "...", "Me")
-console.log(t1.changeStatus())
+
+    }
+
+
 
