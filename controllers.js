@@ -7,7 +7,7 @@ const task = new TaskCard()
 const createButton = document.getElementById('createButton')
 
 createButton.addEventListener('click', function(){
-    task.createCard
+    task.createCard()
 })
 
 

@@ -7,8 +7,8 @@ export default class TaskCard {
         this.responsable = responsable
         this.cardComplete = cardComplete } 
     
-    createCard(createButton){
-        const collum = document.querySelector('.collums')
+    createCard(){
+        const cardToDo = document.getElementById('toDo')
         const card = document.createElement('div')
         const input = document.createElement('input')
         const criar = document.createElement('button')
@@ -18,7 +18,12 @@ export default class TaskCard {
 
         input.classList.add("card")
 
-        collum.appendChild(card)
+        criar.textContent = "Criar"
+
+        cardToDo.appendChild(card)
+        card.appendChild(input)
+        card.appendChild(criar)
+
     }
 
 
