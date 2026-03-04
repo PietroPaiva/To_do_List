@@ -10,19 +10,28 @@ export default class TaskCard {
     createCard(){
         const cardToDo = document.getElementById('toDo')
         const card = document.createElement('div')
-        const input = document.createElement('input')
+        this.tittle = document.createElement('input')
         const criar = document.createElement('button')
         
-        input.type = "text"
-        input.placeholder = "Digite sua tarefa..."
+        this.tittle.type = "text"
+        this.tittle.placeholder = "Digite sua tarefa..."
 
-        input.classList.add("card")
+        card.classList.add("card")
 
         criar.textContent = "Criar"
 
         cardToDo.appendChild(card)
-        card.appendChild(input)
+        card.appendChild(this.tittle)
         card.appendChild(criar)
+
+        return this.tittle;
+
+    }
+
+    saveCard(){
+
+
+        ;        
 
     }
 

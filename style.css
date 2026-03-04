@@ -14,11 +14,14 @@ gap: 10px;
 }
 
 #toDo {
+
     width: 30vw;
     height: 35vh;
     background-color: cornsilk;
     text-align: center;
     border-radius: 10%;
+
+    justify-content: center;
     
 }
 
@@ -40,7 +43,8 @@ gap: 10px;
 }
 
 .card{
-    width: 10vw;
+    margin: 0 auto;
+    width: 90%;
     height: 15vh;
     background-color: blueviolet;
 }
